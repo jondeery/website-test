@@ -61,6 +61,7 @@ new p5(function (sketch) {
       image = images[imageIndex];
     }
     position.add(velocity);
+    image.resize(500, 500);
     sketch.image(image, position.x, position.y);
   };
 });
