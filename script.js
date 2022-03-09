@@ -34,7 +34,7 @@ new p5(function (sketch) {
    */
   sketch.preload = function () {
     for (var i = 1; i < 8; i++) {
-      var image = sketch.loadImage("assets/dvd" + i + ".svg");
+      var image = sketch.loadImage("assets/deery" + i + ".svg");
       images.push(image);
     }
   };
