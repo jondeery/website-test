@@ -1,8 +1,8 @@
 new p5(function (sketch) {
   var images = [];
   var imageIndex = 0;
-  var position = sketch.createVector(0, 0);
-  var velocity = p5.Vector.fromAngle(45);
+  var position;
+  var velocity;
   velocity.mult(5);
 
   /**
@@ -43,6 +43,8 @@ new p5(function (sketch) {
    * Setup.
    */
   sketch.setup = function () {
+    position = sketch.createVector(0, 0);
+    velocity = p5.Vector.fromAngle(45);
     sketch.createCanvas(window.innerWidth, window.innerHeight);
   };
 
