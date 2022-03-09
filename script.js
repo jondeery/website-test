@@ -43,7 +43,7 @@ new p5(function (sketch) {
    * Setup.
    */
   sketch.setup = function () {
-    sketch.createCanvas(window.innerWidth, window.innerHeight);
+    sketch.createCanvas(window.outerWidth, window.outerHeight);
   };
 
   /**
